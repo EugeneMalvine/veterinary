@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Вход в систему{% endblock %}</title>
+        {% block stylesheets %} {% include 'base_styles.html.twig' %} {% endblock %}
+    </head>
+    <body class="animsition">
+        <div class="page-wrapper">
+        	{% include 'Default/menu.html.twig' %}
+
+	        <div class="page-container">
+	        	{% include 'Default/header_desctop.html.twig' %}
+	        	{% block body %}{% endblock %}
+	        </div>
+	    </div>
+        {% include 'base_scripts.html.twig' %}
+        {% block javascripts %}  {% endblock %}
+    </body>
+</html>

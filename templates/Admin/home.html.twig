@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{app.user.name}}{% endblock %}
+
+{% block body %}
+    <div class="main-content">
+        <div class="section__content section__content--p30">
+            <div class="container-fluid">
+                <h3>Вы успешно авторизовались!</h3>
+                <div class="row">
+                    <p>Возможные действия</p>
+                    <ul>
+                        <li>Создание пользователей</li>
+                        <li>Редактирование пользователей</li>
+                        <li>Просмотр списка пользователей</li>
+                        <li>Фильтр и поиск пользователей</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
